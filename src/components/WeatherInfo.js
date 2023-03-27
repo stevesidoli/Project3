@@ -3,14 +3,14 @@ import WeatherForecast from './WeatherForecast.js';
 import WeatherForecastHour from './WeatherForecastHour.js';
 
 // Step 1: Import the Axios library into the WeatherInfo component, along with the useState, useEffect and useRef hooks.
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 
 
 const WeatherInfo = () => {
 
-    const [globalCurrentTemp, setGlobalCurrentTemp] = useState(0);
+//     const [globalCurrentTemp, setGlobalCurrentTemp] = useState(0);
     
     const [currentTemp, setCurrentTemp] = useState(0);
 
@@ -74,7 +74,7 @@ const WeatherInfo = () => {
         //     console.log (`the current temp is ${currentTemp}`);
 
 
-            setGlobalCurrentTemp(currentTemp);
+        //     setGlobalCurrentTemp(currentTemp);
 
                             // const currentTime =(apiData.data.current_weather.time);
                             // console.log (currentTime);
