@@ -14,8 +14,22 @@ body {
   min-height: 100vh;
 }
 
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox {
+  text-align: center;
+  background-color: #000;
+  height: 75vh;
+}
+
 .wrapper {
-  width: 1920px;
+  width: 1280px;
   max-width: 90%;
   margin: 0 auto;
 }

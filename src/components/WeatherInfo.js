@@ -69,9 +69,9 @@ const WeatherInfo = () => {
 
             setCurrentTemp(apiData.data.current_weather.temperature);
 
-            console.log (typeof currentTemp);
+        //     console.log (typeof currentTemp);
 
-            console.log (`the current temp is ${currentTemp}`);
+        //     console.log (`the current temp is ${currentTemp}`);
 
 
             setGlobalCurrentTemp(currentTemp);
@@ -85,7 +85,7 @@ const WeatherInfo = () => {
 
         return (
             <>
-            <p> click here for Toronto Weather.</p>
+            <h3 className="wrapper"> click here for Toronto Weather.</h3>
                 
                 <Form />
                 <section class="wrapper resultsSection">
