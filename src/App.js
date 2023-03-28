@@ -16,7 +16,7 @@ function App() {
       </section>
       <footer>
         <p>
-          Created for <a href="https://junocollege.com/" target="_blank">Juno College</a> by <a href="mailto:stevesidoli@gmail.com">Steve Sidoli.</a>
+          Created for <a href="https://junocollege.com/" target="_blank" rel="noreferrer">Juno College</a> by <a href="mailto:stevesidoli@gmail.com">Steve Sidoli.</a>
         </p>
       </footer>
     </div>
