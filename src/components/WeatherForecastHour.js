@@ -1,8 +1,8 @@
 const WeatherForecastHour = (props) => {
     return(
       <div className="weatherDisplayHour">
-        <h3>Weather in an hour</h3>
-        <p>Temperature: {props.futureTemp} degrees celcius</p>
+        <h3>Temperature in an hour</h3>
+        <p>{props.futureTemp} degrees celcius</p>
     </div>
     )
   }
