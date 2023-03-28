@@ -31,9 +31,6 @@ const Form = (props) => {
       <button onClick={handleClick}>Show forecast</button>
       <button onClick={handleClickRefresh}>Hide forecast</button>
       {showForecast && <WeatherInfo />}
-      {/* {showHourlyForecast && <WeatherForecastHour />} */}
-        {/* <button type="submit" id="forecastButton">Current Weather</button>
-        <button type="submit" id="forecastButtonHour">Current Weather in one hour</button> */}
       </form>
     )
   }
