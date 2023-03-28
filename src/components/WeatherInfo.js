@@ -85,10 +85,10 @@ const WeatherInfo = () => {
 
         return (
             <>
-            <h3 className="wrapper"> click here for Toronto Weather.</h3>
+            <h3 className="wrapper">Click here for Toronto Weather</h3>
                 
                 <Form />
-                <section class="wrapper resultsSection">
+                <section className="wrapper resultsSection">
                 <WeatherForecast
                 currentTemp={currentTemp}
                 />

@@ -6,12 +6,16 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap');
+
 body {
   background-image: url("./../assets/torontoBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   min-height: 100vh;
+  font-family: 'Josefin Sans', cursive;
+  font-size: 62.5%;
 }
 
 .app {
@@ -22,10 +26,12 @@ body {
   align-items: center;
 }
 
-.contentBox {
+.opacityBox {
   text-align: center;
-  background-color: #000;
   height: 75vh;
+  max-width: 90%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 3%;
 }
 
 .wrapper {
@@ -39,15 +45,19 @@ body {
 }
 
 .weatherDisplay {
-  border: solid black;
+  border-radius: 3%;
+  background-image: linear-gradient(180deg, #ADD8E6, #90ee90);
   padding: 20px;
   margin: 0px 20px 20px 0px;
+  color: #000;
 }
 
 .weatherDisplayHour {
-  border: solid black;
+  border-radius: 3%;
+  background-image: linear-gradient(180deg, #ADD8E6, #90ee90);
   padding: 20px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 20px 20px 0px;
+  color: #000;
 }
 
 .displayNone {
@@ -56,4 +66,34 @@ body {
 
 .displayBlock {
   display: block;
+}
+
+h1 {
+ font-size: 4rem;
+ text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #008CBA;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #4CAF50;
 }
