@@ -241,11 +241,13 @@ h1 {
   }
 
   .weatherDisplay {
-    width: 90%
+    width: 90%;
+    padding: 50px;
 }
 
   .weatherDisplayHour {
-    width: 90%
+    width: 90%;
+    padding: 50px;
 }
 
 }
