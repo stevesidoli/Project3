@@ -6,7 +6,11 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* Import Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Yellowtail&display=swap');
+
+/* Global Styles */
 
 body {
   background-image: url("./assets/torontoBackground.jpg");
@@ -16,10 +20,6 @@ body {
   min-height: 100vh;
   font-family: 'Josefin Sans', cursive;
   font-size: 62.5%;
-}
-
-img {
-  margin: 30px 5px 0px 5px;
 }
 
 h1 {
@@ -46,14 +46,15 @@ h1 {
 
  footer p {
   margin: 20px;
+  text-align: center;
 }
 
  a {
-  color: #da251d;
+  color: #ffffff;
  }
 
  a:hover {
-  color:#ffffff;
+  color:#12DE5F;
   transition: 0.3s;
  }
  
@@ -63,7 +64,7 @@ h1 {
    text-transform: uppercase;
    background-color: #da251d;
    color: #ffffff;
-   border: none;
+   border: 1px solid transparent;
    padding: 15px 32px;
    text-align: center;
    text-decoration: none;
@@ -76,6 +77,16 @@ h1 {
    background-color: #ffffff;
    color: #da251d;
  }
+
+ button:focus {
+  border: 1px solid #12DE5F;
+}
+
+ img {
+  margin-top: 30px;
+ }
+
+ /* className styles */
 
 .app {
   height: 100vh;
@@ -91,6 +102,9 @@ h1 {
   max-width: 90%;
   background: rgba(0,0,0,0.7);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper {
@@ -101,16 +115,17 @@ h1 {
 
 .resultsSection {
   display: flex;
-  height: 175px;
-  max-height: 20vh;
+  height: 125px;
+  max-height: 10vh;
   display: flex;
   justify-content: center;
 }
 
 .weatherDisplay {
   border-radius: 5px;
-  background-image: linear-gradient(180deg, #ADD8E6, #90ee90);
+  background-image: linear-gradient(60deg, #ffffff, #da251d);
   padding: 20px;
+  margin: 0px 10px 0px 0px;
   width: 30%;
   color: #000;
   display: flex;
@@ -121,8 +136,9 @@ h1 {
 
 .weatherDisplayHour {
   border-radius: 5px;
-  background-image: linear-gradient(180deg, #ADD8E6, #90ee90);
+  background-image: linear-gradient(60deg, #ffffff, #da251d);
   padding: 20px;
+  margin: 0px 0px 0px 10px;
   width: 30%;
   color: #000;
   display: flex;
@@ -139,3 +155,109 @@ h1 {
   display: block;
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 1150px) {
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .resultsSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .weatherDisplay {
+      margin: 20px 0px 0px 0px;
+      width: 60%
+  }
+
+  .weatherDisplayHour {
+    margin: 20px 0px 0px 0px;
+    width: 60%
+  }
+  .opacityBox {
+    height: 90vh;
+  }
+
+}
+
+@media screen and (max-width: 670px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 510px) {
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .weatherForm {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weatherDisplay {
+    width: 90%
+}
+
+  .weatherDisplayHour {
+    width: 90%
+}
+
+}
+
+@media screen and (max-width: 280px) {
+
+  .opacityBox {
+    height: 95vh;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+}
+
+}
