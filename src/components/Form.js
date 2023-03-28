@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import WeatherForecast from "./WeatherForecast";
-import WeatherForecastHour from "./WeatherForecastHour";
+import WeatherInfo from "./WeatherInfo";
 
 const Form = (props) => {
 
@@ -32,8 +31,8 @@ const Form = (props) => {
         
       <button onClick={handleClick}>Show forecast</button>
       <button onClick={handleClickRefresh}>Refresh</button>
-      {showForecast && <WeatherForecast/>}
-      {showHourlyForecast && <WeatherForecastHour />}
+      {showForecast && <WeatherInfo />}
+      {/* {showHourlyForecast && <WeatherForecastHour />} */}
         {/* <button type="submit" id="forecastButton">Current Weather</button>
         <button type="submit" id="forecastButtonHour">Current Weather in one hour</button> */}
       </form>

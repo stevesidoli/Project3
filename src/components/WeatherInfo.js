@@ -1,4 +1,3 @@
-import Form from './Form.js';
 import WeatherForecast from './WeatherForecast.js';
 import WeatherForecastHour from './WeatherForecastHour.js';
 
@@ -84,10 +83,8 @@ const WeatherInfo = () => {
     })
 
         return (
-            <>
-            <h3 className="wrapper">Click here for Toronto Weather</h3>
-                
-                <Form />
+            <>    
+                {/* <Form /> */}
                 <section className="wrapper resultsSection">
                 <WeatherForecast
                 currentTemp={currentTemp}

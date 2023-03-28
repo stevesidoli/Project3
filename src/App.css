@@ -6,7 +6,7 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Yellowtail&display=swap');
 
 body {
   background-image: url("./../assets/torontoBackground.jpg");
@@ -69,12 +69,13 @@ body {
 }
 
 h1 {
- font-size: 4rem;
+ font-size: 3.4rem;
  text-transform: uppercase;
 }
 
 h2 {
   font-size: 2rem;
+  font-family: 'Yellowtail', cursive;
 }
 
 h3 {
@@ -84,16 +85,20 @@ h3 {
 
 button {
   font-size: 0.8rem;
+  font-weight: 700;
   text-transform: uppercase;
-  background-color: #008CBA;
+  background-color: #da251d;
+  color: #ffffff;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 20px;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #4CAF50;
+  background-color: #ffffff;
+  color: #da251d;
 }
