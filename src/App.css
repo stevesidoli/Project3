@@ -59,7 +59,7 @@ h1 {
  }
 
  a:hover {
-  color:#12DE5F;
+  color:#da251d;
   transition: 0.3s;
  }
  
@@ -103,7 +103,6 @@ h1 {
 
 .opacityBox {
   text-align: center;
-  /* height: 75vh; */
   max-width: 90%;
   background: rgba(0,0,0,0.7);
   border-radius: 10px;
@@ -154,12 +153,13 @@ h1 {
   justify-content: center;
 }
 
-.displayNone {
-  display: none;
-}
-
-.displayBlock {
-  display: block;
+footer p {
+margin: 20px;
+text-align: center;
+background-color: black;
+padding: 20px;
+border-radius: 5px;
+background: rgba(0,0,0,.7);
 }
 
 /* Media Queries */
