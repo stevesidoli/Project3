@@ -50,7 +50,6 @@ const WeatherInfo = () => {
 
            setFutureTemp(tempHour[futureHour]);
 
-        
 
     // Step 6: create a variable called currentTemp which contains the current toronto Temperature as stored in the API.    
 

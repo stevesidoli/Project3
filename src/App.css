@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   font-family: 'Josefin Sans', cursive;
   font-size: 62.5%;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -42,6 +43,10 @@ h1 {
  p {
    font-size: 1.1rem;
    margin: 0;
+ }
+
+ footer {
+  position: relative;
  }
 
  footer p {
@@ -98,13 +103,14 @@ h1 {
 
 .opacityBox {
   text-align: center;
-  height: 75vh;
+  /* height: 75vh; */
   max-width: 90%;
   background: rgba(0,0,0,0.7);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .wrapper {
@@ -192,6 +198,7 @@ h1 {
     align-items: center;
     justify-content: flex-start;
   }
+
 
   .weatherDisplay {
       margin: 20px 0px 0px 0px;
