@@ -1,9 +1,9 @@
 const WeatherForecast = (props) => {
     return(
-      <section className="weatherDisplay">
+      <div className="weatherDisplay">
         <h3>Current Temperature</h3>
         <p>{props.currentTemp} degrees celcius</p>
-        </section>
+        </div>
     )
   }
   

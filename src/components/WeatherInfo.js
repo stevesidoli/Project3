@@ -60,7 +60,7 @@ const WeatherInfo = () => {
 
         return (
             <>    
-                <section className="wrapper resultsSection">
+                <section className="resultsSection">
                 <WeatherForecast
                 currentTemp={currentTemp}
                 />

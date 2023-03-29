@@ -84,7 +84,7 @@ h1 {
  }
 
  button:focus {
-  border: 1px solid #12DE5F;
+  border: 1px solid #ffffff;
 }
 
  img {
@@ -122,7 +122,6 @@ h1 {
 .resultsSection {
   display: flex;
   height: 125px;
-  max-height: 10vh;
   display: flex;
   justify-content: center;
 }
@@ -133,6 +132,7 @@ h1 {
   padding: 20px;
   margin: 0px 10px 0px 0px;
   width: 30%;
+  height: 100px;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -146,6 +146,7 @@ h1 {
   padding: 20px;
   margin: 0px 0px 0px 10px;
   width: 30%;
+  height: 100px;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -177,10 +178,20 @@ h1 {
     font-size: 0.9rem;
   }
 
+  img {
+    height: 130px;
+  }
+
 }
 
 @media screen and (max-width: 860px) {
 
+  body {
+
+    background-size: auto;
+
+  }
+  
   h1 {
     font-size: 2rem;
   }
@@ -191,6 +202,14 @@ h1 {
 
   h3 {
     font-size: 0.8rem;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  button {
+    margin: 10px;
   }
 
   .resultsSection {
